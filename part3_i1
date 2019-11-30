@@ -1,0 +1,26 @@
+S='sophix'
+ordSum = 0
+for c in S:
+    ordSum += ord(c)
+
+
+print(ordSum)
+
+print(map(ord, S))
+
+print(list(map(ord,S)))
+
+print([ord(c) for c in S])
+
+map1 = {'key3':'val3', 'key2':'val2', 'key1':'val1'}
+print(list(map1.keys()))
+
+listKeys = list(map1.keys())
+listKeys.sort()
+print(listKeys)
+for k in listKeys:
+    print(map1[k])
+
+
+for k in sorted(map1):
+    print(k + "==>" + map1[k])
